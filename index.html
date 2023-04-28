@@ -5,20 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WDD 230: Assignment Portal</title>
     <meta name="description" content="Assignment portal for Jeremy Hodge WDD 230: Web Frontend Development at Brigham Young University-Idaho">
-    <link href="styles/main.css" rel="stylesheet">
+    <link href="styles/normalize.css" rel="normalize stylesheet">
+    <link href="styles/small.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles/medium.css">
 </head>
 <body>
-    <div class="box">
+    <header class="box">
     <img src="images/jeremy.jpg" alt="A picture of Jeremy Hodge standing in front of the Eiffel tower.">
     <h2>Jeremy V. Hodge </h2>
-</div>
+    </header>
     
     <h1>WDD 230: Assignment Portal</h1>
             <hr>
     <nav>
         <div class="list">
             <ul>
-                <li>Lesson 02:  <a href="title">Title</a></li>
+                <li>Lesson 02:  <a href="./lessons/lesson2/design-principles.html">Design Principles</a></li>
                 <li>Lesson 03:  <a href="title">Title</a></li>                             
                 <li>Lesson 04:  <a href="title">Title</a></li>                             
                 <li>Lesson 05:  <a href="title">Title</a></li>
@@ -39,7 +41,7 @@
         
     </main>
     <footer>
-        &copy; 2023 .:|:. Jeremy Hodge .:|:. Idaho <br>
+        &copy; <span id="copyright"></span> .:|:. Jeremy Hodge .:|:. Idaho <br>
         <div class="date">
         Last Updated: <span id="currentdate"></span></div>
     </footer>

@@ -1,0 +1,32 @@
+@media only screen and (min-width:  32.5em) {
+    .box {
+        display: grid;
+        grid-template-columns: 25% auto;
+        border-radius: 20px;  
+    }
+    h1 {
+        grid-column: 2/3;
+        font-size: 3em;
+    }
+    h2 {
+        grid-column: 2/3;
+        font-size: 3em;
+    }
+    footer {
+        border-radius: 10px;
+    }
+    img {
+        grid-column: 1/2;
+    }
+    p{
+        line-height: 20%;
+    }
+    footer {
+        font-size: 1.5rem;
+    }
+    .date {
+        font-size: 1.3rem;
+    }
+
+
+} 
