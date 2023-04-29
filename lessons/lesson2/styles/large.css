@@ -1,0 +1,23 @@
+@media only screen and (min-width: 50em){
+    main {
+        display: grid;
+    }
+    body{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    header {
+        grid-row: 1/4;
+    }
+    .column_1 {
+        grid-row: 1/2;
+    }
+    .column_2 {
+        grid-column: 2/3;
+    }
+    .column_3 {
+        grid-column: 3/4;
+    }
+    footer {
+        grid-column: 1/4;
+    }
+}

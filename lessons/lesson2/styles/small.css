@@ -1,10 +1,15 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Castoro+Titling&family=PT+Serif&display=swap');
+
 body {
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr;
+    font-family: 'Castoro Titling', cursive;
     }
 header {
     background-color: #0a2032;
-    grid-column: 1/4;
+    grid-column: 1/2;
     margin: 1em 1em 0em 1em;
+    padding: 1em;
 }
 h1 {
     color: #ffffff;
@@ -21,8 +26,10 @@ h3 {
     color: #ffffff;
     padding: 1em;
 }
+h4 {
+    padding-left: 1em;
+}
 main {
-    display: grid;
     margin: 1em 1em 0em 1em;
 }
 
@@ -36,10 +43,10 @@ section {
     grid-column: 1/2;
 }
 .column_2{
-    grid-column: 2/3;
+    grid-column: 1/2;
 }
 .column_3 {
-    grid-column: 3/4;
+    grid-column: 1/2;
 }
 
 .photo_left {
@@ -51,10 +58,15 @@ section {
 .photo_right {
     max-width: 100%;
 }
+p {
+    padding: 1em;
+    font-family: 'PT Serif', serif;
+}
 footer {
-    grid-column: 1/4;
+    grid-column: 1/2;
     background-color: #0a2032;
     color: #ffffff;
     margin: 1em 1em 0em 1em;
     text-align: center;
+    padding: 1em;
 }
