@@ -4,7 +4,7 @@
 body {
     grid-template-columns: 1fr;
     font-family: 'Castoro Titling', cursive;
-    }
+}
 header {
     background-color: #0a2032;
     grid-column: 1/2;
@@ -32,7 +32,6 @@ h4 {
 main {
     margin: 1em 1em 0em 1em;
 }
-
 section {
     background-color: #eeeeee;
     border-radius: 1.29em 1.29em 0 0 ;
