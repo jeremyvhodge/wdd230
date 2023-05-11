@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chamber Website</title>
+    <meta name="description" content="Chamber Website for Jeremy Hodge WDD 230: Web Frontend Development at Brigham Young University-Idaho">
+    <link href="styles/normalize.css" rel="normalize stylesheet">
+    <link href="styles/small.css" rel="stylesheet">
+    <link href="styles/medium.css" rel="stylesheet">
+    <link href="styles/large.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="site-logo">
+            <img class="logo" src="images/logoClear.png" alt="A symbol of mountians with the words Pocatello Chubbuck Chamber of Commerce">
+            </div>
+        <h1>
+            Pocatello Chubbuck Chamber of Commerce
+        </h1>
+        <a class="social1" href="https://www.facebook.com/">Facebook</a>
+    
+    <div id="todayDate"></div>
+    <nav>
+        <button id="burgerbutton"><span>&#9776;</span><span>X</span></button>
+        <ul id="primarynav">
+            <li class="active"><a href="#">Discover</a></li>
+            <li ><a href="#">Directory</a></li>
+            <li><a href="#">Join</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+    </header>
+    <main>
+        <div class="event">Event</div>
+        <div class="weather">Weather</div>
+        <div class="join">Join</div>
+        <div class="hero">Hero</div>
+        <div class="newrelease">New Release</div>
+        <section class="light">
+            <div class="light1">Spotlight 1</div>
+            <div class="light2">Spotlight 2</div>
+            <div class="light3">Spotlight 3</div>
+        </section>
+        
+    </main>
+    
+    <footer>
+        <div class="footer-flex">
+            <img class="logo-footer" src="images/logoClear.png" alt="A symbol of mountians with the words Pocatello Chubbuck Chamber of Commerce">
+            <div class="center">
+                <h3>Pocatello Chubbuck Chamber of Commerce</h3>
+                <p class="address">
+                10 Rue De La Paix
+                <br>
+                Timbuktu, Mali 999
+                </p>
+            </div>
+            <p class="email">
+                pocatellochubbuckcc.org
+                <br>
+                (223) 288-2300
+                <br>
+                <a href="https://goo.gl/maps/LpBWq9q8gbMCvZ89A"> &#128205 Location Map</a>
+            </p>
+    </div>
+        <br>
+        &copy; <span id="copyright"></span>  Pocatello Chubbuck Chamber | Jeremy Hodge | WDD 230 Project |
+        <div class="date">
+        Last Modified: <span id="currentdate"></span></div>
+    </footer>
+    <script src="scripts/burger.js"></script>
+    <script src="scripts/todayDate.js"></script>
+    <script src="../../scripts/currentdate.js"></script>
+    
+</html>

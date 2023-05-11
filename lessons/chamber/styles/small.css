@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Castoro+Titling&family=PT+Serif&display=swap');
+header {
+    background-color: aqua;
+    margin-bottom: 4em;
+}
+nav button {
+    margin: .2rem 2vw;
+    background: transparent;
+    border: none;
+    font-size: 2rem;
+    color: #555;
+}
+
+nav {
+    
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    padding-bottom: 2em;
+    padding-top: 2em;
+}
+
+nav ul li a {
+display: block;
+padding: .8rem 2vw;
+text-decoration: none;
+color: #333;
+border-top: 1px solid rgba(0,0,0,0.5);
+}
+
+nav ul li.active a {
+    background-color: rgba(0,0,0,0.2) ;
+    color: #fff;
+}
+nav ul li a:hover {
+    background-color: rgba(0,0,0,0.3);
+}
+
+nav ul{display: none;}
+nav ul.open {display:block;}
+
+#burgerbutton span:nth-child(1) {display: block;}
+#burgerbutton span:nth-child(2) {display: none;}
+
+#burgerbutton.open span:nth-child(1) {display: none;}
+#burgerbutton.open span:nth-child(2) {display: block;}
+
+.logo {
+        position: absolute;
+        max-width: 200px;
+        max-height: 200px;
+        top: 1.7em;
+        left: 3em;
+}
+h1 {
+    padding-top: 1em;
+    text-align: center;
+}
+footer {
+    text-align: center;
+    background-color: #f1f
+}
+#todayDate {
+    text-align: center;
+
+}
+.logo-footer {
+    max-width: 200px;
+    max-height: 100px;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    
+}
+p {
+    display: inline;
+    
+}
+h3{
+    display: inline;
+}
+.footer-flex {
+    display: flex;
+    justify-content: center;
+}
+.email {
+    text-align: right;
+    
+}
+.email a {
+    text-decoration: none;
+}
+h3{
+    text-align: left;
+    display: block;
+    margin-bottom: 0;
+}
+.address {
+    text-align: left;
+    width: 100%;
+    display: block;
+    margin-top: 0;
+}
+.center {
+    margin-right: 3em;
+    margin-left: 1.5em;
+}
+.social1 {
+    display: block;
+    text-align: right;
+    margin-right: 3em;
+}
