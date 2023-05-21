@@ -33,6 +33,9 @@ main {
     grid-column: 1/4;
     grid-row: 1/2;
 }
+.hero a {
+    max-width: 50%;
+}
 .view {
     display: none;
 }

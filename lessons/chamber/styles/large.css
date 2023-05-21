@@ -40,6 +40,9 @@ nav ul li a {
     
     padding: .5rem 1rem;
 }
+.hero a {
+    max-width: 30%;
+}
 
 li {
     display: inline;
@@ -90,7 +93,6 @@ main {
     width: auto;
 }
 .light2 {
-    height: 4em;
     margin-left: .5em;
     margin-right: .5em;
     width: auto;
