@@ -16,7 +16,7 @@
         <header>
             <div class="logo-h1">
                 <div class="site-logo">
-                    <img class="logo" src="images/logoClear.png" alt="A symbol of mountians with the words Pocatello Chubbuck Chamber of Commerce">
+                    <img class="logo" src="images/logoClear.webp" alt="A symbol of mountians with the words Pocatello Chubbuck Chamber of Commerce">
                 </div>
                 <h1>
                     Pocatello Chamber of Commerce
@@ -45,9 +45,15 @@
     <main>
         <div class="hero"><h3>Welcome to Pocatello</h3><!--<a href=""><h3 class="join-button">Join the Chamber</h3></a> -->
             <!-- <img class="poky1" src="images/poky1.JPG" alt="A view of Pocatello with the sun shining">  -->
+            <picture class="photoA">
+               <source media="(max-width: 480px)" srcset="images/wdd230-org-small.jpg">
+                <source media="(max-width: 768px)" srcset="images/wdd230-org-medium.jpg">
+                <source media="(max-width: 2560px)" srcset="images/wdd230-org-large.jpg">
+                <img class="hero-img" src="images/wdd230-org.jpg" alt="People in office working.">
+            </picture>
         </div>
         <div class="event"><h3>Scout Mountain Bike Race</h3> <img class="bike" src="images/bike.png" alt= "a picture of a bike"> <p>The Scout Mountain bike race will take place in the first week of July</p></div>
-        <div class="weather"><h3>Weather</h3> <img class="cloud" src="images/weather.png" alt= "A weather symbol"> <p>Partly Cloudy</p> <br> <p>Wind Speed</p> <br> <p>Wind Chill</p></div>
+        <div class="weather"><h3>Weather</h3> <img class="cloud" src="images/weather.png" alt= "A weather symbol"> <p id="weather-description">Loading...</p> <br> <p>Wind Speed: <span id="wind-speed">Loading...</span></p> <br> <p>Wind Chill: <span id="wind-chill">Loading...</span></p></div>
         <div class="newrelease"><h3>News Release</h3><p>Reprehenderit ipsum do reprehenderit cillum esse do exercitation duis nostrud duis nulla. Sint reprehenderit ullamco non nulla sunt et laborum laboris qui irure pariatur duis sit id. Veniam aute occaecat esse qui ipsum ad ex incididunt aliqua veniam aliqua sit nostrud esse. Laborum exercitation adipisicing anim nulla ex Lorem minim.</p></div>
         <div class="join"><a href=""><h3 class="join-button">Join Us!</h3></a><p>Discover how to join the chaber of commerce and how it will benifit your organization!</p></div>
         
@@ -60,7 +66,7 @@
     </main>
     
     <footer>
-            <img class="logo-footer" src="images/logoClear.png" alt="A symbol of mountians with the words Pocatello Chubbuck Chamber of Commerce">
+            <img class="logo-footer" src="images/logoClear.webp" alt="A symbol of mountians with the words Pocatello Chubbuck Chamber of Commerce">
             <div class="center">
                 <h4>Pocatello Chamber of Commerce</h4>
                 <br>
@@ -88,6 +94,7 @@
     <script src="scripts/todayDate.js"></script>
     <script src="../../scripts/currentdate.js"></script>
     <script src="scripts/banner.js"></script>
+    <script src="scripts/windchill.js"></script>
 </body>
     
-</html>
+    </html>

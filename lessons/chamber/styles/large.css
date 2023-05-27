@@ -1,9 +1,13 @@
-@media only screen and (min-width: 50em) {
+@media only screen and (min-width: 1024px) {
     nav button {display: none;}
 header  {
     margin: auto;
     justify-content: center;
-    
+    grid-template-columns: 1fr 50% 1fr;
+}
+#primarynav {
+    margin: auto;
+    font-size: 1.3em;
 }
 #burgerbutton {
     display: none;

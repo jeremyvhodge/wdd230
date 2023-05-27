@@ -1,4 +1,4 @@
-@media only screen and (min-width: 32.5em) {
+@media only screen and (min-width: 768px) {
 
 nav button {display: block;}
 
@@ -9,16 +9,14 @@ header {
 nav ul #primarynav {
     display: flex;
     justify-content: center;
-    /* border-left: 1px solid rgba(0,0,0,0.3); */
-
+    
 }
 nav ul {
     display: none;
 }
     nav ul li a {
         border: none;
-        /* border-right: 1px solid rgba(0,0,0,0.3); */
-        
+          
     }
     h1 {
         font-size: 1.5em;
