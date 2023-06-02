@@ -9,7 +9,7 @@
     height: 100%;
     width: auto;
     filter: blur(0em);
-    transition: filter 0.5s;
+    transition: filter 1.5s;
   }
   
   .image-container img[data-src] {

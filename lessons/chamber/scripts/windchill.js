@@ -28,18 +28,26 @@ fetch(
         console.log('Weather Data: ', data);
 
         // Extract the wind speed from the received data
-        const windSpeedData = data.wind.speed;
+        const windSpeedData = data.wind.speed * 2.237;
+    
+        // Check if wind speed is greater than or equal to 3 mph and temperature is less than or equal to 50°F
+        if (windSpeedData >= 3 && temperature <= 50) {
+            // Calculate the wind chill based on temperature and wind speed
+            const windChillData = calculateWindChill(temperature, windSpeedData);
 
-        // Calculate the wind chill based on temperature and wind speed
-        const windChillData = calculateWindChill(temperature, windSpeedData);
-
+            // Update the HTML element with the wind chill data
+            windChill.textContent = windChillData + ' °F';
+        } else {
+            // Set wind chill data to N/A if conditions are not met
+            windChill.textContent = 'N/A';
+            
+        }
         // Extract the weather condition description from the received data
         const weatherConditionData = data.weather[0].description;
 
         // Update the HTML elements with the weather data
         weatherDescription.textContent = weatherConditionData;
-        windChill.textContent = windChillData + ' °F';
-        windSpeed.textContent = windSpeedData + ' MPH';
+        windSpeed.textContent = Math.round(windSpeedData) + ' MPH';
     })
     .catch((error) => {
         // Log an error message if fetching weather data fails
@@ -48,15 +56,14 @@ fetch(
         // Display a message indicating the failure to fetch weather data
         weatherDescription.textContent = 'Failed to fetch weather data';
     });
-
+    
 // Function to calculate the wind chill
 function calculateWindChill(temperature, windSpeed) {
-    // Convert wind speed from m/s to mph
-    const windSpeedMph = windSpeed * 2.237;
-
+    
     // Calculate wind chill using the given formula
-    const windChill = 35.74 + 0.6215 * temperature - 35.75 * Math.pow(windSpeedMph, 0.16) + 0.4275 * temperature * Math.pow(windSpeedMph, 0.16);
+    const windChill = 35.74 + 0.6215 * temperature - 35.75 * Math.pow(windSpeed, 0.16) + 0.4275 * temperature * Math.pow(windSpeed, 0.16);
 
     // Round the wind chill value and return it
     return Math.round(windChill);
 }
+
