@@ -25,7 +25,7 @@ nav ul {
 main {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto auto auto auto auto;
 }
 .hero {
     grid-column: 1/4;
@@ -37,11 +37,21 @@ main {
 .view {
     display: none;
 }
-.light {
+.light{
     grid-column:1/4 ;
     grid-row: 3/4;
     display: flex;
     justify-content: center;
+    padding: 0;
+}
+.discover-img {
+    grid-column:1/4 ;
+    grid-row: 3/4;
+    padding: 0;
+}
+.discover-img {
+    grid-column:1/4 ;
+    grid-row: 3/4;
     padding: 0;
 }
 .light1 {
@@ -95,4 +105,14 @@ main {
     width: 100%;
     margin-top: 0;
 }
+.discover-img .image-container {
+    box-shadow: 0 0 10px rgba(255, 255, 0, 0.3);
+  transition: box-shadow 0.3s;
+}
+
+.discover-img .image-container :hover {
+    box-shadow: 0 0 35px rgba(255, 255, 0, 0.8);
+} 
+
+
 }

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chamber Website</title>
+    <meta name="description" content="Chamber Website for Jeremy Hodge WDD 230: Web Frontend Development at Brigham Young University-Idaho">
+    <link href="styles/normalize.css" rel="normalize stylesheet">
+    <link href="styles/small.css" rel="stylesheet">
+    <link href="styles/medium.css" rel="stylesheet">
+    <link href="styles/large.css" rel="stylesheet">
+</head>
+<body>
+    <div id='banner'>🤝🏼 Come join us for the chamber meet and greet Wednesday at 7:00 p.m.</div>
+        <header>
+            <div class="logo-h1">
+                <div class="site-logo">
+                    <img class="logo" src="images/logoClear.webp" alt="A symbol of mountians with the words Pocatello Chubbuck Chamber of Commerce">
+                </div>
+                <h1>
+                    Pocatello Chamber of Commerce
+                </h1>
+            </div>
+        
+        <div class="socials">
+            
+            <a class="social1" href="https://www.facebook.com/"><img src="images/facebook.svg" alt="The Facbook logo"></a>
+            <a class="social2" href="https://www.instagram.com/"><img src="images/instagram.svg" alt="The Instagram logo"> </a>
+            <button id="burgerbutton"><span>&#9776;</span><span>X</span></button>
+            </div>
+            <nav>
+                <ul id="primarynav">
+                    <li><a href="#">Home</a></li>
+                    <li class="active"><a href="#">Discover</a></li>
+                    <li><a href="#">Directory</a></li>
+                    <li><a href="#">Join</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+            <div id="todayDate"></div>
+        </header>
+    
+    
+    <main>
+        <div class="hero"><h3>Pocatello is located in Eastern Idaho</h3><!--<a href=""><h3 class="join-button">Join the Chamber</h3></a> -->
+            <!-- <img class="poky1" src="images/poky1.JPG" alt="A view of Pocatello with the sun shining">  -->
+            <picture class="photoA">
+                <source media="(max-width: 480px)" srcset="images/pokymapsmall.png">
+                <source media="(max-width: 768px)" srcset="images/pokymapmedium.png">
+                <source media="(max-width: 2560px)" srcset="images/pokymaplarge.png">
+                <img class="hero-img" src="images/pokymap.png" alt="View of Pocatello city">
+            </picture>
+        </div>
+        <div class="event"><h3>Population of Pocatello <br>57,092 (2021)</h3> <img class="population" src="images/population-graph.webp" alt= "a picture of Idaho"> <p>biggestuscities.com</p></div>
+        <div class="weather"><h3>Average Temperatures</h3> <img class="tempgraph" src="images/pokytemps1.png" alt= "A graph of average temperatures of Pocatello"> <p id="weather-description">City-Data.com</p></div>
+        <div class="newrelease"><h3>Things to do in Pocatello</h3><p>Pocatello offers a variety of things to do. There is a lot of outdoor recreational activities like snow skiing, water skiing, mountain biking, and hiking to name a few. If you want to stay inside, then there are places to eat, stores to shop, moview theaters to visit, and local sports to watch.</p></div>
+        <div class="join"><a href=""><h3>Days since last visit: <span id=daysSince></span></h3></a></div>
+        
+        <section class="discover-img">
+                    <div class="image-container"><picture><img class="" src="images/place.webp" data-src="images/d1.webp" alt= "picture of pocatello1"></picture></div>
+                    <p>Totally not Utah </p>
+                    <div class="image-container"><picture><img src="images/place.webp" data-src="images/d2.webp" alt= "picture of pocatello2"></picture></div>
+                    <p>wow!</p>
+                    <div class="image-container"><picture><img src="images/place.webp" data-src="images/d3.webp" alt= "picture of pocatello3"></picture></div>
+                    <p>This is cool</p>
+                    <div class="image-container"><picture><img src="images/place.webp" data-src="images/d4.webp" alt= "picture of pocatello4"></picture></div>
+                    <p>Look at this!</p>
+                    <div class="image-container"><picture><img src="images/place.webp" data-src="images/d5.webp" alt= "picture of pocatello5"></picture></div>
+                    <p>I love this</p>
+        </section>
+        
+    </main>
+    
+    <footer>
+            <img class="logo-footer" src="images/logoClear.webp" alt="A symbol of mountians with the words Pocatello Chubbuck Chamber of Commerce">
+            <div class="center">
+                <h4>Pocatello Chamber of Commerce</h4>
+                <br>
+                <p class="address">
+                324 S Main St
+                <br>
+                Pocatello, Idaho 83204
+                </p>
+            </div>
+            <p class="email">
+                pocatellochamber.org
+                <br>
+                (223) 288-2300
+                <br>
+                <a href="https://goo.gl/maps/LpBWq9q8gbMCvZ89A"> &#128205; Location Map</a>
+            </p>
+        <br>
+        <div class="copy">
+            &copy; <span id="copyright"></span>  Pocatello Chamber | Jeremy Hodge | WDD 230 Project |
+            <div class="date">
+            Last Modified: <span id="currentdate"></span></div>
+        </div>
+    </footer>   
+    <script src="scripts/burger.js"></script>
+    <script src="scripts/todayDate.js"></script>
+    <script src="../../scripts/currentdate.js"></script>
+    <script src="scripts/banner.js"></script>
+    <script src="scripts/lazyload.js"></script>
+</body>
+    
+    </html>
