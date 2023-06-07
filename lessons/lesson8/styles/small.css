@@ -22,7 +22,10 @@ table {
             background-color: #000000;
             color: #ffffff;
   }
-
+  
+  body{
+    width: 400px;
+}
   .title {
     text-align: center;
   }
@@ -43,7 +46,12 @@ table {
     .red {
       color:#f92f60;
   }
-  
+
     .purple {
       color: #635994;
+  }
+  footer {
+    text-align: center;
+    padding: 10px;
+    
   }
