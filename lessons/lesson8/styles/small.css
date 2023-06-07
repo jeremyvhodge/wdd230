@@ -1,5 +1,4 @@
 :root {
-	
 	--zebra: hsl(0, 0%, 93%, 1);
 }
 
@@ -25,7 +24,8 @@ table {
   
   body {
     width: 400px;
-}
+  
+  }
 
   .title {
     text-align: center;
