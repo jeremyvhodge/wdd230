@@ -351,42 +351,61 @@ img {
     max-width: 250px;
 }
 /*--------Form---------*/
-.member {
+
+label input, select {
     display: block;
-    font-size: 1rem;
-    
-}
-.submitBtn{
-    border: none;
-    background-color: #03943d;
-    color: white;
-    border-radius: 2rem;
-    padding: 2rem;
-    margin-bottom: 2.5rem;
-    width: 100%;
-    max-width: 22rem;
-    font-size: 1.5em;
-}
-form textarea{
-    min-height: 5rem;
-    max-height: 10rem;
-    max-width: 20rem;
-    border-radius: 7px;
-}
-form label input,select {
     min-height: 1.5rem;
     max-height: 2rem;
     border-radius: 7px;
+    align-items: left;
+    margin: auto;
 }
+select {
+    min-height: 1.8rem;
+}
+form {
+    margin: auto;
+    text-align: center;
+    border-radius: 7px;
+    align-items: left;
+    display: inline-block;
+}
+.submitBtn {
+    background-color: green;
+    color:#c1c1b5;
+    border-radius: 2em;
+    max-width:10em;
+    margin: auto;
+    margin-top: 0.8em;
+    margin-bottom: 2em;
+    padding-top: 1em;
+    padding-bottom: 2em;
+    
+}
+form textarea {
+    margin-top: 1em;
+    min-height: 4rem;
+    min-width: 20em;
+    border-radius: 7px;
+    display: inline;
+}
+
 .non {
     max-width: 7rem;
 }
 .bronze{
 max-width: 6.5rem;
 }
+/*------to show red when field is not valid------*/
 form label.member input:required {
     border-left: red solid 6px;
 }
+/*------to show green when filed is valid-----*/
 form label.member input:required:valid {
     border-left:green solid 6px;
+}
+.member-heading, .why-join {
+    margin: 0;
+    padding: 0;
+    margin-top: 1em;
 }
