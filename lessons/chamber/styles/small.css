@@ -350,3 +350,43 @@ img {
 .population {
     max-width: 250px;
 }
+/*--------Form---------*/
+.member {
+    display: block;
+    font-size: 1rem;
+    
+}
+.submitBtn{
+    border: none;
+    background-color: #03943d;
+    color: white;
+    border-radius: 2rem;
+    padding: 2rem;
+    margin-bottom: 2.5rem;
+    width: 100%;
+    max-width: 22rem;
+    font-size: 1.5em;
+}
+form textarea{
+    min-height: 5rem;
+    max-height: 10rem;
+    max-width: 20rem;
+    border-radius: 7px;
+}
+form label input,select {
+    min-height: 1.5rem;
+    max-height: 2rem;
+    border-radius: 7px;
+}
+.non {
+    max-width: 7rem;
+}
+.bronze{
+max-width: 6.5rem;
+}
+form label.member input:required {
+    border-left: red solid 6px;
+}
+form label.member input:required:valid {
+    border-left:green solid 6px;
+}

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chamber Website Join</title>
+    <meta name="description" content="Chamber Website for Jeremy Hodge WDD 230: Web Frontend Development at Brigham Young University-Idaho">
+    <link href="styles/normalize.css" rel="normalize stylesheet">
+    <link href="styles/small.css" rel="stylesheet">
+    <link href="styles/medium.css" rel="stylesheet">
+    <link href="styles/large.css" rel="stylesheet">
+</head>
+<body>
+    <div id='banner'>🤝🏼 Come join us for the chamber meet and greet Wednesday at 7:00 p.m.</div>
+        <header>
+            <div class="logo-h1">
+                <div class="site-logo">
+                    <img class="logo" src="images/logoClear.webp" alt="A symbol of mountians with the words Pocatello Chubbuck Chamber of Commerce">
+                </div>
+                <h1>
+                    Pocatello Chamber of Commerce
+                </h1>
+            </div>
+        
+        <div class="socials">
+            
+            <a class="social1" href="https://www.facebook.com/"><img src="images/facebook.svg" alt="The Facbook logo"></a>
+            <a class="social2" href="https://www.instagram.com/"><img src="images/instagram.svg" alt="The Instagram logo"> </a>
+            <button id="burgerbutton"><span>&#9776;</span><span>X</span></button>
+            </div>
+            <nav>
+                <ul id="primarynav">
+                    <li class="active"><a href="index.html">Home</a></li>
+                    <li><a href="discover.html">Discover</a></li>
+                    <li><a href="#">Directory</a></li>
+                    <li><a href="join.html">Join</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+            <div id="todayDate"></div>
+        </header>
+    
+    
+    <main>
+        <div class="hero">
+            <h1>Membership Form</h1>
+  <form method="get" action="thankyou.html">
+    <label class="member"> First Name: *
+    <input type="text" name="first-name" required></label><br><br>
+
+    <label class="member"> Last Name: *
+    <input type="text" name="last-name" required><label<br><br><br><br>
+
+    <label class="member"> Business Position Title:
+    <input type="text" name="position-title" pattern="[A-Za-z\s\-]{7,}" title="Only alphabetic characters, hyphens, and spaces are allowed with a minimum of seven characters."></label><br><br>
+
+    <label class="member"> Email: *
+    <input type="email" name="email" placeholder="example@example.com" required></label><br><br>
+
+    <label class="member"> Cell Phone Number: *
+    <input type="tel" name="cell-number" placeholder="1234567899" required></label><br><br>
+
+    <label class="member"> Business Name/Title: *
+    <input type="text" name="business-name" required></label><br><br>
+
+    <label class="member"> Membership Level:
+    <select name="membership-level">
+      <option value="">Please Select</option>
+      <option value="NP Membership">NP Membership (No Fee)</option>
+      <option value="Bronze Membership">Bronze Membership $100</option>
+      <option value="Silver Membership">Silver Membership $500</option>
+      <option value="Gold Membership">Gold Membership $1000</option>
+    </select></label><br><br>
+
+    <label class="member"> Business Description:
+    <textarea name="business-description"></textarea></label><br><br>
+
+    <input type="hidden" id="form-loaded-time" name="form-loaded-time" value="<?php echo date('Y-m-d H:i:s'); ?>">
+
+    <input class="submitBtn" type="submit" value="Join the Chamber">
+  </form>
+        </div>
+        <div class="event"><h3>Non-Profit Membership</h3> <img class="non" src="images/non.webp" alt= "a picture of a non-profit symbol"> <p>Free advertising of events on this website</p></div>
+        <div class="weather"><h3>Membership Costs</h3> <img class="cloud" src="images/money.webp" alt= "A weather symbol"> <p id="weather-description">Gold Membership $1000 per year</p> <br> <p>Silver Membership $500 per year <span id="wind-speed"></span></p> <br> <p>Bronze Membership $100 per year<span id="wind-chill"></span></p></div>
+        <div class="newrelease"><h3>Why Join?</h3><p>Joining the Pocatello Chamber of Commerce allows your organization to be visiable to the community. The Chamber website helps advertise the event your organization is sponsoring so you get the most involvment and participation from local businesses and families.</p></div>
+        <div class="join"><a href=""><h3 class="join-button">Join Us!</h3></a><p>What are you waiting for? Become a member today!</p></div>
+        
+        <section class="light">
+            <div class="light1"><h3>Gold Membership</h3> <img class="spot1" src="images/gold.webp" alt= "a picture of a gold membership-level"> <p>Unlimited advertising of events on this website</p></div>
+            <div class="light2"><h3>Silver Membership</h3> <img class="spot2" src="images/silver.webp" alt= "a picture of a silver membership-level"> <p>Advertise 5 times a year on this website</p></div>
+            <div class="light3"><h3>Bronze Membership</h3> <img class="bronze" src= "images/bronze.webp" alt= "a picture of a bronze membership-level"><p>Advertise 3 times a year on this website.</p></div>
+        </section>
+        
+    </main>
+    <footer>
+            <img class="logo-footer" src="images/logoClear.webp" alt="A symbol of mountians with the words Pocatello Chubbuck Chamber of Commerce">
+            <div class="center">
+                <h4>Pocatello Chamber of Commerce</h4>
+                <br>
+                <p class="address">
+                324 S Main St
+                <br>
+                Pocatello, Idaho 83204
+                </p>
+            </div>
+            <p class="email">
+                pocatellochamber.org
+                <br>
+                (223) 288-2300
+                <br>
+                <a href="https://goo.gl/maps/LpBWq9q8gbMCvZ89A"> &#128205; Location Map</a>
+            </p>
+        <br>
+        <div class="copy">
+            &copy; <span id="copyright"></span>  Pocatello Chamber | Jeremy Hodge | WDD 230 Project |
+            <div class="date">
+            Last Modified: <span id="currentdate"></span></div>
+        </div>
+    </footer>   
+    <script src="scripts/burger.js"></script>
+    <script src="scripts/todayDate.js"></script>
+    <script src="../../scripts/currentdate.js"></script>
+</body>
+    
+    </html>
