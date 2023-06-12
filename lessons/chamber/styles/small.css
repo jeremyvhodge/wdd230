@@ -357,7 +357,7 @@ label input, select {
     min-height: 1.5rem;
     max-height: 2rem;
     border-radius: 7px;
-    align-items: left;
+    /* align-items: left; */
     margin: auto;
 }
 select {
@@ -367,7 +367,7 @@ form {
     margin: auto;
     text-align: center;
     border-radius: 7px;
-    align-items: left;
+    /* align-items: left; */
     display: inline-block;
 }
 .submitBtn {
