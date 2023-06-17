@@ -77,7 +77,13 @@ function setLoadTime() {
     const loadTime = year + '-' + month + '-' + day + ' ' + hours + ':' + minutes + ':' + seconds;
 
     // Set the value of the element with the ID 'load-time-input' to the load time string
-    document.getElementById('load-time-input').value = loadTime;
+    
+    try {
+        document.getElementById('load-time-input').value = loadTime;
+    }
+    catch(err) {
+        console.log("load-time-input not found");
+        }
 }
 
   

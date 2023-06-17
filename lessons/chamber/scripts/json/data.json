@@ -1,0 +1,76 @@
+{
+    "companies": [
+      {
+        "name": "ABC Company",
+        "address": "123 Main Street, City A, Country X",
+        "phone": "+1234567890",
+        "website": "https://www.abccompany.com",
+        "icon": "https://i.natgeofe.com/n/548467d8-c5f1-4551-9f58-6817a8d2c45e/NationalGeographic_2572187_square.jpg",
+        "membershipLevel": "gold"
+      },
+      {
+        "name": "XYZ Corporation",
+        "address": "456 Elm Avenue, City B, Country Y",
+        "phone": "+9876543210",
+        "website": "https://www.xyzcorp.com",
+        "icon": "https://i.natgeofe.com/n/548467d8-c5f1-4551-9f58-6817a8d2c45e/NationalGeographic_2572187_square.jpg",
+        "membershipLevel": "silver"
+      },
+      {
+        "name": "PQR Industries",
+        "address": "789 Oak Road, City C, Country Z",
+        "phone": "+2468135790",
+        "website": "https://www.pqrindustries.com",
+        "icon":"https://i.natgeofe.com/n/548467d8-c5f1-4551-9f58-6817a8d2c45e/NationalGeographic_2572187_square.jpg" ,
+        "membershipLevel": "bronze"
+      },
+      {
+        "name": "LMN Ltd.",
+        "address": "321 Maple Lane, City D, Country X",
+        "phone": "+1357924680",
+        "website": "https://www.lmn-ltd.com",
+        "icon": "https://i.natgeofe.com/n/548467d8-c5f1-4551-9f58-6817a8d2c45e/NationalGeographic_2572187_square.jpg",
+        "membershipLevel": "gold"
+      },
+      {
+        "name": "EFG Corporation",
+        "address": "654 Pine Street, City E, Country Y",
+        "phone": "+8642097531",
+        "website": "https://www.efgcorp.com",
+        "icon": "https://i.natgeofe.com/n/548467d8-c5f1-4551-9f58-6817a8d2c45e/NationalGeographic_2572187_square.jpg",
+        "membershipLevel": "silver"
+      },
+      {
+        "name": "RST Enterprises",
+        "address": "987 Cedar Avenue, City F, Country Z",
+        "phone": "+7520318649",
+        "website": "https://www.rstenterprises.com",
+        "icon": "https://i.natgeofe.com/n/548467d8-c5f1-4551-9f58-6817a8d2c45e/NationalGeographic_2572187_square.jpg",
+        "membershipLevel": "bronze"
+      },
+      {
+        "name": "JKL Solutions",
+        "address": "159 Birch Road, City G, Country X",
+        "phone": "+4683572901",
+        "website": "https://www.jkl-solutions.com",
+        "icon": "https://i.natgeofe.com/n/548467d8-c5f1-4551-9f58-6817a8d2c45e/NationalGeographic_2572187_square.jpg",
+        "membershipLevel": "gold"
+      },
+      {
+        "name": "MNO Group",
+        "address": "753 Walnut Street, City H, Country Y",
+        "phone": "+1029384756",
+        "website": "https://www.mno-group.com",
+        "icon": "https://i.natgeofe.com/n/548467d8-c5f1-4551-9f58-6817a8d2c45e/NationalGeographic_2572187_square.jpg",
+        "membershipLevel": "silver"
+      },
+      {
+        "name": "GHI Incorporated",
+        "address": "246 Oak Lane, City I, Country Z",
+        "phone": "+5746291830",
+        "website": "https://www.ghi-inc.com",
+        "icon": "https://i.natgeofe.com/n/548467d8-c5f1-4551-9f58-6817a8d2c45e/NationalGeographic_2572187_square.jpg",
+        "membershipLevel": "bronze"
+      }
+    ]
+  }
