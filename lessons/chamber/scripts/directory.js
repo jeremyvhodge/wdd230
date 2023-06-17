@@ -7,6 +7,8 @@ async function getCompanyData() {
   displayCompanies(arrayWithTheCompanies.companies);
 }
 
+
+
 function displayCompanies(dataThatWeGetFromTheURL) {
     const cards = document.querySelector('div.cards'); // select the output container element
 
@@ -48,12 +50,12 @@ membership.textContent = companyInTheJsonFile.membership;
     icon.setAttribute('loading', 'lazy');
 
 // Append the elements into a div named card
-
+card.appendChild(icon);
 card.appendChild(name)
 card.appendChild(address);
 card.appendChild(phone);
 card.appendChild(website);
-card.appendChild(icon);
+
 card.appendChild(membership);
 
 cards.appendChild(card);

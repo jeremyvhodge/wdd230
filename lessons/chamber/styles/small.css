@@ -410,7 +410,7 @@ form label.member input:required:valid {
     margin-top: 1em;
 }
 /*-------Directory page CSS -----------*/
-.cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px,1fr)); grid-gap:10px;
+.cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px,1fr)); grid-gap:5px;
     
 }
 /* section {
@@ -421,9 +421,13 @@ form label.member input:required:valid {
     margin: 0;
     height: 100px;
     width: auto;
+    padding-top: 5px;
     /* display: block; */
 
 }
 .card {
-    border: solid #000000;
+    border: 1px solid #000000;
+    background-color: #ffffff;
+    color: #000000;
+    margin: 10px;
 }
