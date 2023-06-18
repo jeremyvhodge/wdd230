@@ -1,7 +1,7 @@
 async function getCompanyData() {
   // Returns a promise that needs to be resolved in order to access the data. 
   const response = await fetch('./scripts/json/data.json');
-  // The next line is telling the computer that this is a JSON file. That way it knows how to extract the JSON data
+  // Return in JSON format.
   const arrayWithTheCompanies = await response.json();
   // calling the function
   displayCompanies(arrayWithTheCompanies.companies);
@@ -62,7 +62,6 @@ cards.appendChild(card);
 
 
 
-
     // console.log("name:", companyInTheJsonFile.name);
     // console.log("address:", companyInTheJsonFile.address);
     // console.log("phone:", companyInTheJsonFile.phone);
@@ -75,3 +74,22 @@ cards.appendChild(card);
 }
 
 getCompanyData();
+
+// grid view and list view button code
+document.addEventListener('DOMContentLoaded', function() {
+  const panelButton = document.getElementById('panel');
+  const listButton = document.getElementById('list');
+  const cardsContainer = document.querySelector('.cards');
+
+  panelButton.addEventListener('click', function() {
+    cardsContainer.classList.remove('cards-list');
+    cardsContainer.classList.add('cards-grid');
+  });
+
+  listButton.addEventListener('click', function() {
+    cardsContainer.classList.remove('cards-grid');
+    cardsContainer.classList.add('cards-list');
+  });
+});
+
+

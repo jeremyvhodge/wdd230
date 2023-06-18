@@ -410,9 +410,18 @@ form label.member input:required:valid {
     margin-top: 1em;
 }
 /*-------Directory page CSS -----------*/
-.cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px,1fr)); grid-gap:5px;
+.cards-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px,1fr)); grid-gap:5px;
     
 }
+.cards-list {
+    display: flex;
+    flex-direction: column;
+  } 
+.cards-list .card .card-icon {
+    display: none;
+}
+
+
 /* section {
     border: solid #000000 1px;
     padding: 20px;
@@ -430,4 +439,30 @@ form label.member input:required:valid {
     background-color: #ffffff;
     color: #000000;
     margin: 10px;
+}
+
+.card-name {
+    font-size: 23px;
+    padding: 5px;
+}
+
+.card-website{
+    padding: 5px;
+}
+
+.directory-buttons {
+    margin-bottom: 10px;
+    padding: 10px;
+    text-align: center;
+}
+
+.cards-list .card .card-phone, .cards-list .card .card-address, .cards-list .card .card-website, .cards-list .card .card-name {
+    padding: 1em;
+    text-align: center;
+    margin: auto;
+}
+.cards-list .card {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
