@@ -421,11 +421,6 @@ form label.member input:required:valid {
     display: none;
 }
 
-
-/* section {
-    border: solid #000000 1px;
-    padding: 20px;
-} */
 .card-icon {
     margin: 0;
     height: 100px;
