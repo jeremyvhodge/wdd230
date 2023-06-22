@@ -12,7 +12,6 @@
     <link href="styles/large.css" rel="stylesheet">
 </head>
 <body>
-    <div id='banner'>🤝🏼 Come join us for the chamber meet and greet Wednesday at 7:00 p.m.</div>
         <header>
             <div class="logo-h1">
                 <div class="site-logo">
@@ -20,25 +19,14 @@
                 </div>
                 <h1>OpenWeatherMap.org API Test</h1>
             </div>
-        
-        <div class="socials">
-            
-            <a class="social1" href="https://www.facebook.com/"><img src="images/facebook.svg" alt="The Facbook logo"></a>
-            <a class="social2" href="https://www.instagram.com/"><img src="images/instagram.svg" alt="The Instagram logo"> </a>
-            <button id="burgerbutton"><span>&#9776;</span><span>X</span></button>
-            </div>
-            
-            <div id="todayDate"></div>
-           
         </header>
     <main>
         <p>The current temperature in Fairbanks, Alaska is <span id="current-temp"></span> &deg;F</p>
-        <h2>Current Condition Icon</h2>
-        <figure>
-          <img src="" alt="" id="weather-icon" />
-          <figcaption></figcaption>
-        </figure>
-        
+            <h2>Current Condition Icon</h2>
+                <figure>
+                    <img src="" alt="" id="weather-icon" />
+                    <figcaption id="weather-description"></figcaption>
+                </figure>
     </main>
     <footer>
             <img class="logo-footer" src="images/logoClear.webp" alt="A symbol of mountians with the words Pocatello Chubbuck Chamber of Commerce">
@@ -60,15 +48,15 @@
             </p>
         <br>
         <div class="copy">
+        
             &copy; <span id="copyright"></span>  Pocatello Chamber | Jeremy Hodge | WDD 230 Project |
             <div class="date">
             Last Modified: <span id="currentdate"></span></div>
         </div>
     </footer>   
-    <script src="scripts/burger.js"></script>
-    <script src="scripts/todayDate.js"></script>
     <script src="../../scripts/currentdate.js"></script>
-    <script src="scripts/directory.js"></script>
+    <script src="scripts/weatherapi.js"></script>
+
 </body>
     
     </html>

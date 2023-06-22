@@ -461,6 +461,7 @@ form label.member input:required:valid {
     flex-wrap: wrap;
     justify-content: center;
 }
-h2 {
-    text-align: center;
+main {
+    align-items: center;
+    grid-gap: 1em;
 }

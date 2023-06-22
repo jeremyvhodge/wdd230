@@ -13,6 +13,10 @@ const windSpeed = document.getElementById('wind-speed');
 // Get the element for displaying the wind chill
 const windChill = document.getElementById('wind-chill');
 
+const weatherIcon = document.getElementById('weather-icon');
+
+const currentTemp = document.getElementById('current-temp');
+
 // Fetch weather data from OpenWeatherMap API
 fetch(
     `https://api.openweathermap.org/data/2.5/weather?id=${cityId}&appid=${apiKey}`
@@ -29,6 +33,12 @@ fetch(
 
         // Extract the wind speed from the received data
         const windSpeedData = data.wind.speed * 2.237;
+        const liveIcon = data.weather[0].icon;
+
+        currentTemp.textContent = temperature + ' °F'; 
+
+
+        weatherIcon.setAttribute('src', `https://openweathermap.org/img/wn/${liveIcon}@2x.png`);
     
         // Check if wind speed is greater than or equal to 3 mph and temperature is less than or equal to 50°F
         if (windSpeedData >= 3 && temperature <= 50) {
