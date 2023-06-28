@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chamber Website</title>
+    <title>Chamber Website Join</title>
     <meta name="description" content="Chamber Website for Jeremy Hodge WDD 230: Web Frontend Development at Brigham Young University-Idaho">
     <link href="styles/normalize.css" rel="normalize stylesheet">
     <link href="styles/small.css" rel="stylesheet">
@@ -31,38 +31,53 @@
             </div>
             <nav>
                 <ul id="primarynav">
-                    <li class="active"><a href="index.html">Home</a></li>
+                    <li ><a href="index.html">Home</a></li>
                     <li><a href="discover.html">Discover</a></li>
                     <li><a href="directory.html">Directory</a></li>
-                    <li><a href="join.html">Join</a></li>
+                    <li class="active"><a href="join.html">Join</a></li>
                     <li><a href="contact.html">Contact</a></li>
                 </ul>
             </nav>
             <div id="todayDate"></div>
         </header>
+    
+    
     <main>
-        <div class="hero"><h3>Welcome to Pocatello</h3><!--<a href=""><h3 class="join-button">Join the Chamber</h3></a> -->
-            <!-- <img class="poky1" src="images/poky1.JPG" alt="A view of Pocatello with the sun shining">  -->
-            <picture class="photoA">
-               <source media="(max-width: 480px)" srcset="images/poky1small.webp">
-                <source media="(max-width: 768px)" srcset="images/poky1medium.webp">
-                <source media="(max-width: 2560px)" srcset="images/poky1large.webp">
-                <img class="hero-img" src="images/poky1.webp" alt="A view of Pocatello city.">
-            </picture>
+        <div class="hero">
+            <h1 class="member-heading">Contact the Chamber</h1><br>
+            <form method="get" action="thankyou.html">
+                <label class="member"> First Name: *
+                <input type="text" name="first-name" required></label><br><br>
+            
+                <label class="member"> Last Name: *
+                <input type="text" name="last-name" required></label><br><br><br>
+            
+                <label class="member"> Email: *
+                <input type="email" name="email" placeholder="example@example.com" required></label><br><br>
+            
+                <label class="member"> Cell Phone Number: 
+                <input type="tel" name="cell-number" placeholder="1234567899"></label><br><br>
+                
+                <label class="member">Questions or Comments:<br>
+                <textarea name="business-description"></textarea></label><br><br>
+            
+                <input type="hidden" name="load-time" id="load-time-input">
+            
+                <input class="submitBtn" type="submit" value="Contact Us">
+                </form>
         </div>
-        <div class="event"><h3>Scout Mountain Bike Race</h3> <img class="bike" src="images/bike.webp" alt= "a picture of a bike"> <p>The Scout Mountain bike race will be the second week in September.</p></div>
-        <div class="weather"> <h3>Current Weather</h3><br><span id="current-temp"></span> <br><img id="weather-icon" class="cloud" src="images/weather.webp" alt= "A weather symbol"> <p id="weather-description">Loading...</p> <br> <p>Wind Speed: <span id="wind-speed">Loading...</span></p> <br> <p>Wind Chill: <span id="wind-chill">Loading...</span></p></div>
-        <div class="newrelease"><h3>News Release</h3><p>Reprehenderit ipsum do reprehenderit cillum esse do exercitation duis nostrud duis nulla. Sint reprehenderit ullamco non nulla sunt et laborum laboris qui irure pariatur duis sit id. Veniam aute occaecat esse qui ipsum ad ex incididunt aliqua veniam aliqua sit nostrud esse. Laborum exercitation adipisicing anim nulla ex Lorem minim.</p></div>
-        <div class="join"><a href="join.html"><h3 class="join-button">Join Us!</h3></a><p>Discover how to join the chaber of commerce and how it will benifit your organization!</p></div>
+        <div class="event"><h3>Office Hours</h3> <img class="non" src="images/non.webp" alt= "a picture of a non-profit symbol"> <p>Monday-Friday 8am to 5pm</p></div>
+        <div class="weather"><h3>Visit Us</h3> <img class="cloud" src="images/money.webp" alt= "A weather symbol"> <p id="weather-description">324 S Main St</p> <p>Pocatello, Idaho 83204<span id="wind-speed"></span></p><p>(223) 288-2300<span id="wind-chill"></span></p></div>
+        <div class="newrelease"><h3 class="why-join">Privacy Information</h3><p>The Pocatello Chamber of Commerce will not sell your contact information.</p></div>
+        <div class="join"><h3>Email us at</h3>pocatellochamber.org</div>
         
         <section class="light">
-            <div class="light1"><h3>Idaho State University Graduation</h3> <img class="spot1" src="images/isu.webp" alt= "Idaho State University Logo"> <p>Visit isu.org for more details.</p></div>
-            <div class="light2"><h3>Places to eat in Pocatello</h3> <img class="spot2" src="images/eat.webp" alt= "a picture of a dinner plate with fork and spoon"> <p> Discover the best local places to eat.</p></div>
-            <div class="light3"><h3>Outdoor Recreation</h3> <img class="spot3" src= "images/outdoor.webp" alt= "Oudoor activity logos"><p>Discover what the area has to offer.</p></div>
+            <div class="light1"><h3>President</h3> <img class="spot1" src="images/gold.webp" alt= "a picture of a gold membership-level"> <p>Mike Smith</p></div>
+            <div class="light2"><h3>Vice President</h3> <img class="spot2" src="images/silver.webp" alt= "a picture of a silver membership-level"> <p>Barbara Smith</p></div>
+            <div class="light3"><h3>Secretary</h3> <img class="bronze" src= "images/bronze.webp" alt= "a picture of a bronze membership-level"><p>Bob Johnson</p></div>
         </section>
         
     </main>
-    
     <footer>
             <img class="logo-footer" src="images/logoClear.webp" alt="A symbol of mountians with the words Pocatello Chubbuck Chamber of Commerce">
             <div class="center">
@@ -83,7 +98,6 @@
             </p>
         <br>
         <div class="copy">
-            Weather data provided by <a href="https://openweathermap.org/">OpenWeatherMap.org</a><br>
             &copy; <span id="copyright"></span>  Pocatello Chamber | Jeremy Hodge | WDD 230 Project |
             <div class="date">
             Last Modified: <span id="currentdate"></span></div>
@@ -92,8 +106,6 @@
     <script src="scripts/burger.js"></script>
     <script src="scripts/todayDate.js"></script>
     <script src="../../scripts/currentdate.js"></script>
-    <script src="scripts/banner.js"></script>
-    <script src="scripts/windchill.js"></script>
 </body>
     
     </html>
