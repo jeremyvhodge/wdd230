@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chamber Website</title>
+    <title>Chamber Website Join Thank You Page</title>
     <meta name="description" content="Chamber Website for Jeremy Hodge WDD 230: Web Frontend Development at Brigham Young University-Idaho">
     <link href="styles/normalize.css" rel="normalize stylesheet">
     <link href="styles/small.css" rel="stylesheet">
@@ -31,7 +31,7 @@
             </div>
             <nav>
                 <ul id="primarynav">
-                    <li class="active"><a href="index.html">Home</a></li>
+                    <li><a href="index.html">Home</a></li>
                     <li><a href="discover.html">Discover</a></li>
                     <li><a href="directory.html">Directory</a></li>
                     <li><a href="join.html">Join</a></li>
@@ -41,8 +41,7 @@
             <div id="todayDate"></div>
         </header>
     <main>
-        <div class="hero"><h3>Welcome to Pocatello</h3><!--<a href=""><h3 class="join-button">Join the Chamber</h3></a> -->
-            <!-- <img class="poky1" src="images/poky1.JPG" alt="A view of Pocatello with the sun shining">  -->
+        <div class="hero"><h2>Thank you for contacting the Pocatello Chamber of Commerce!</h2>
             <picture class="photoA">
                <source media="(max-width: 480px)" srcset="images/poky1small.webp">
                 <source media="(max-width: 768px)" srcset="images/poky1medium.webp">
@@ -50,19 +49,8 @@
                 <img class="hero-img" src="images/poky1.webp" alt="A view of Pocatello city.">
             </picture>
         </div>
-        <div class="event"><h3>Scout Mountain Bike Race</h3> <img class="bike" src="images/bike.webp" alt= "a picture of a bike"> <p>The Scout Mountain bike race will be the second week in September.</p></div>
-        <div class="weather"> <h3>Current Weather</h3><br><span id="current-temp"></span> <br><img id="weather-icon" class="cloud" src="images/weather.webp" alt= "A weather symbol"> <p id="weather-description">Loading...</p> <br> <p>Wind Speed: <span id="wind-speed">Loading...</span></p> <br> <p>Wind Chill: <span id="wind-chill">Loading...</span></p></div>
-        <div class="newrelease"><h3>News Release</h3><p>Pocatello is excited to announce the farmers market that will take place every Saturday this summer in old town. We want to thank Idaho Central Credit Union for their donation of building the new park for the farmers market.</p></div>
-        <div class="join"><a href="join.html"><h3 class="join-button">Join Us!</h3></a><p>Discover how to join the chaber of commerce and how it will benifit your organization!</p></div>
-        
-        <section class="light">
-            <div class="light1" ><h3 id="randomSpot1">Idaho State University Graduation</h3> <img class="spot1" id="randomSpot1img" src="images/isu.webp" alt= "Idaho State University Logo"> <p id="randomSpot1p">Visit isu.org for more details.</p></div>
-            <div class="light2"><h3 id="randomSpot2">Places to eat in Pocatello</h3> <img class="spot2" id="radomSpot2img" src="images/eat.webp" alt= "a picture of a dinner plate with fork and spoon"> <p id="randomSpot2p"> Discover the best local places to eat.</p></div>
-            <div class="light3"><h3>Outdoor Recreation</h3> <img class="spot3" src= "images/outdoor.webp" alt= "Oudoor activity logos"><p>Discover what the area has to offer.</p></div>
-        </section>
         
     </main>
-    
     <footer>
             <img class="logo-footer" src="images/logoClear.webp" alt="A symbol of mountians with the words Pocatello Chubbuck Chamber of Commerce">
             <div class="center">
@@ -83,7 +71,6 @@
             </p>
         <br>
         <div class="copy">
-            Weather data provided by <a href="https://openweathermap.org/">OpenWeatherMap.org</a><br>
             &copy; <span id="copyright"></span>  Pocatello Chamber | Jeremy Hodge | WDD 230 Project |
             <div class="date">
             Last Modified: <span id="currentdate"></span></div>
@@ -92,9 +79,6 @@
     <script src="scripts/burger.js"></script>
     <script src="scripts/todayDate.js"></script>
     <script src="../../scripts/currentdate.js"></script>
-    <script src="scripts/banner.js"></script>
-    <script src="scripts/windchill.js"></script>
-    <script src="scripts/spotlight.js"></script>
 </body>
     
     </html>
