@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Chamber Website Join</title>
-    <meta name="description" content="Chamber Website for Jeremy Hodge WDD 230: Web Frontend Development at Brigham Young University-Idaho">
+    <meta name="description" content="Pocatello Chamber of Commerce Join page. Users can join the chamber.">
     <link href="styles/normalize.css" rel="normalize stylesheet">
     <link href="styles/small.css" rel="stylesheet">
     <link href="styles/medium.css" rel="stylesheet">
@@ -52,8 +52,7 @@
     <label class="member"> Last Name: *
     <input type="text" name="last-name" required></label><br><br><br>
 
-    <label class="member"> Business Position Title:
-    <input type="text" name="position-title" pattern="[A-Za-z\s\-]{7,}" title="Only alphabetic characters, hyphens, and spaces are allowed with a minimum of seven characters."></label><br><br>
+   
 
     <label class="member"> Email: *
     <input type="email" name="email" placeholder="example@example.com" required></label><br><br>
@@ -63,6 +62,9 @@
 
     <label class="member"> Business Name/Title: *
     <input type="text" name="business-name" required></label><br><br>
+    <fieldset>
+    <label class="member"> Business Position Title:
+        <input type="text" name="position-title" pattern="[A-Za-z\s\-]{7,}" title="Only alphabetic characters, hyphens, and spaces are allowed with a minimum of seven characters."></label><br><br>
 
     <label class="member"> Membership Level:
     <select name="membership-level">
@@ -75,7 +77,7 @@
 
     <label class="member"> Business Description:<br>
     <textarea name="business-description"></textarea></label><br><br>
-
+</fieldset>
     <input type="hidden" name="load-time" id="load-time-input">
 
     <input class="submitBtn" type="submit" value="Join the Chamber">
