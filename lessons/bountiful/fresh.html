@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chamber Website Home Page</title>
+    <meta name="description" content="This is the home page for the Pocatello Chamber of Commerce Website">
+    <link href="styles/normalize.css" rel="normalize stylesheet">
+    <link href="styles/small.css" rel="stylesheet">
+    <link href="styles/medium.css" rel="stylesheet">
+    <link href="styles/large.css" rel="stylesheet">
+</head>
+<body>
+        <header>
+            <div class="logo-h1">
+                <div class="site-logo">
+                    <img class="logo" src="images/bountlogo.png" alt="The logo for Bountiful Foods.">
+                </div>
+            </div>
+        
+        <div class="socials">
+            <a class="social1" href="https://www.facebook.com/"><img src="images/facebook.svg" alt="The Facbook logo"></a>
+            <a class="social2" href="https://www.instagram.com/"><img src="images/instagram.svg" alt="The Instagram logo"> </a>
+            <a class="social3" href="https://www.twitter.com/"><img src="images/twitter.svg" alt="The Twitter logo"> </a>
+            
+            <button id="burgerbutton"><span>&#9776;</span><span>X</span></button>
+            </div>
+            <nav>
+                <ul id="primarynav">
+                    <li><a href="index.html">Home</a></li>
+                    <li class="active"><a href="fresh.html">Fresh</a></li>
+                    <li><a href="aboutus.html">About Us</a></li>
+                </ul>
+            </nav>
+        
+        </header>
+    <main>
+        <div class="hero">
+            <h1 class="member-heading">Drink Order</h1><br>
+  <form method="get" action="scripts/fruit.js">
+    <label class="member"> First Name: *
+    <input type="text" name="First Name" required></label><br><br>
+
+    <label class="member"> Email: *
+    <input type="email" name="Email" placeholder="example@example.com" required></label><br><br>
+
+    <label class="member"> Cell Phone Number: *
+    <input type="tel" name="Cell Number" placeholder="1234567899" required></label><br><br>
+<fieldset>
+    <br>
+    <label class="member"> Fruit Choice #1: *
+        <select id="fruit1" name="Fruit" required>
+        <option value="">Please Select</option>
+     </select></label><br><br>
+    <label class="member"> Fruit Choice #2:
+        <select id="fruit2" name="Fruit">
+            <option value="">Please Select</option>
+     </select></label><br><br>
+    <label class="member"> Fruit Choice #3:
+        <select id="fruit3" name="Fruit">
+        <option value="">Please Select</option>
+        </select></label><br><br>
+    </fieldset>
+    <br>
+        <label class="member">Questions or Comments:<br>
+            <textarea name="Comments"></textarea></label><br><br>
+
+    <input type="hidden" name="Order Submitted" id="load-time-input">
+
+    <input class="submitBtn" type="submit" value="Order Drink">
+  </form>
+    <div id="result"></div>
+    </main>
+    
+    <footer>
+            <img class="logo-footer" src="images/bountlogo.png" alt="A symbol of mountians with the words Pocatello Chubbuck Chamber of Commerce">
+            <div class="center">
+                <h4>Bountiful Foods</h4>
+                
+                <p class="address">
+                1901 N Coast Hwy 101
+                <br>
+                Carlsbad, California 92013
+                </p>
+            </div>
+            <p class="email">
+                bountifulfoods.com
+                <br>
+                (760) 230-1590
+                <br>
+                <a href="https://goo.gl/maps/LpBWq9q8gbMCvZ89A"> &#128205; Location Map</a>
+            </p>
+            <br>
+        <div class="copy">
+            Weather data provided by <a href="https://openweathermap.org/">OpenWeatherMap.org</a><br>
+            &copy; <span id="copyright"></span>  2023 Bountiful Foods. All rights reserved.
+        </div>
+    </footer>   
+    <script src="scripts/burger.js"></script>
+    <script src="scripts/todayDate.js"></script>
+    <script src="../../scripts/currentdate.js"></script>
+    <script src="scripts/fruit.js"></script>
+</body>
+    
+</html>

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chamber Website Home Page</title>
+    <meta name="description" content="This is the home page for the Pocatello Chamber of Commerce Website">
+    <link href="styles/normalize.css" rel="normalize stylesheet">
+    <link href="styles/small.css" rel="stylesheet">
+    <link href="styles/medium.css" rel="stylesheet">
+    <link href="styles/large.css" rel="stylesheet">
+</head>
+<body>
+        <header>
+            <div class="logo-h1">
+                <div class="site-logo">
+                    <img class="logo" src="images/bountlogo.png" alt="The logo for Bountiful Foods.">
+                </div>
+            </div>
+        
+        <div class="socials">
+            <a class="social1" href="https://www.facebook.com/"><img src="images/facebook.svg" alt="The Facbook logo"></a>
+            <a class="social2" href="https://www.instagram.com/"><img src="images/instagram.svg" alt="The Instagram logo"> </a>
+            <a class="social3" href="https://www.twitter.com/"><img src="images/twitter.svg" alt="The Twitter logo"> </a>
+
+            <button id="burgerbutton"><span>&#9776;</span><span>X</span></button>
+            </div>
+            <nav>
+                <ul id="primarynav">
+                    <li class="active"><a href="index.html">Home</a></li>
+                    <li><a href="fresh.html">Fresh</a></li>
+                    <li><a href="aboutus.html">About Us</a></li>
+                </ul>
+            </nav>
+        
+        </header>
+    <main>
+        <div class="hero"><h2>Bountiful Foods</h2>
+            <picture class="photoA">
+                <source media="(max-width: 480px)" srcset="images/grapesS.webp">
+                <source media="(max-width: 768px)" srcset="images/grapesM.webp">
+                <source media="(max-width: 2560px)" srcset="images/grapesL.webp">
+                <img class="hero-img" src="images/grapes.webp" alt="A picture of grapes being held in a mans hands.">
+            </picture>
+            <p>Bountiful Foods is located in Carlsbad and is open Monday through Saturday 8am to 6pm.</p>
+        </div>
+        <div class="event"><h3>Made to order fruit drinks</h3> <img class="smoothie" src="images/smoothie.webp" alt= "a picture of a fruit smoothie"> <p>Order a delicous fruit smoothie today!.
+            
+            <div class="join"><a href="fresh.html"><h3 class="join-button">Order a drink</h3></a></div>
+        </p></div>
+
+        <div class="weather"> <h3>Current Weather In Carlsbad</h3><br><span id="current-temp"></span> <br><img id="weather-icon" class="cloud" alt= "A weather symbol"> <p id="weather-description">Loading...</p> <br> <p>Humidity: <span id="humidity">Loading...</span></p> <br> <p>3 Day Forecast: <span id="forecast"></span></p></div>
+        <div class="newrelease"><h3>Information about the area</h3><p>Southern California's weather is famous for producing the best fruit in the country.</p></div>
+        
+    </main>
+    
+    <footer>
+            <img class="logo-footer" src="images/bountlogo.png" alt="A symbol of mountians with the words Pocatello Chubbuck Chamber of Commerce">
+            <div class="center">
+                <h4>Bountiful Foods</h4>
+                
+                <p class="address">
+                1901 N Coast Hwy 101
+                <br>
+                Carlsbad, California 92013
+                </p>
+            </div>
+            <p class="email">
+                bountifulfoods.com
+                <br>
+                (760) 230-1590
+                <br>
+                <a href="https://goo.gl/maps/LpBWq9q8gbMCvZ89A"> &#128205; Location Map</a>
+            </p>
+            <br>
+        <div class="copy">
+            Weather data provided by <a href="https://openweathermap.org/">OpenWeatherMap.org</a><br>
+            &copy; <span id="copyright"></span>  2023 Bountiful Foods. All rights reserved.
+        </div>
+    </footer>   
+    <script src="scripts/burger.js"></script>
+    <script src="scripts/todayDate.js"></script>
+    <script src="../../scripts/currentdate.js"></script>
+    <script src="scripts/banner.js"></script>
+    <script src="scripts/weatherAPI.js"></script>
+</body>
+    
+</html>
