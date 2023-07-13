@@ -23,6 +23,9 @@ nav ul li a {
 h1 {
     font-size: 1.5em;
 }
+.straw {
+    background-position: center;
+}
 
 main {
     display: grid;

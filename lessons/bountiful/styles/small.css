@@ -1,12 +1,32 @@
 @import url('https://fonts.googleapis.com/css2?family=PT+Serif&family=Roboto&display=swap');
 
 
-.event, .weather, .join, .hero, .newrelease, .discover-img {
-    background-color: #db4437;
-    color: #000000;
+.event, .weather, .join, .hero, .newrelease, .discover-img, .history {
+    background-color: rgba(0,0,0,0.4);
+    color: white;
     border-radius: 20px;
 }
-
+body {
+    z-index: 2;
+}
+.history {
+    border: solid 1px #ffffff;
+    margin: 0.5em;
+}
+.straw {
+    background-image: url("../images/strawberries.webp");
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;    
+    
+}
+.kiwi {
+    background-image: url("../images/kiwi.jpeg");
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
 .discover-img {
     overflow: auto;
 }
@@ -14,7 +34,8 @@
 header {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: auto auto
+    grid-template-rows: auto auto;
+    align-items: center;
 }
 
 .logo-h1 {
@@ -23,14 +44,24 @@ header {
 }
 
 .logo {
-    max-width: 100px;
+    max-width: 150px;
+    background-color: rgba(255,255,255,1);
+    border-radius: 2em;
+    margin: auto;
+    margin-top: 0.5em;
+    border: solid 3px #000000;
+    
+}
+.logo-h1 {
+    grid-column: 2/3;
+    justify-self: center;
 }
 
 .logo-footer {
     grid-column: 1/4;
     justify-self: center;
-    max-width: 75px;
-    max-height: 75px;
+    max-width: 100px;
+    max-height: 100px;
     margin-top: 0.5em;
     margin-bottom: 0.5em;
     padding-right: 1em;
@@ -62,19 +93,20 @@ nav ul li a {
     display: block;
     padding: .8rem 2vw;
     text-decoration: none;
-    color: #282A6D;
-    border-top: 1px solid rgba(0,0,0,0.5);
+    color: #ffffff;
+    border-top: 1px solid rgba(0,0,0,0.3);
+    text-shadow: #000000 5px 0 10px;
 }
 
 
 
 nav ul li.active a {
-    background-color: rgba(0,0,0,0.2) ;
-    color: #000000;
+    background-color: rgba(255,255,255,0.5) ;
+    color: #ffffff;
 }
 
 nav ul li a:hover {
-    background-color: rgba(0,0,0,0.3);
+    background-color: rgba(255,255,255,0.6);
 }
 
 nav ul{display: none;}
@@ -109,6 +141,11 @@ footer {
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: auto;
     margin-top: 0.5em;
+    color: white;
+    text-shadow: #000000 5px 0 10px;
+}
+footer a {
+    color: white;
 }
 
 .email {
@@ -170,12 +207,19 @@ h4 {
 
 
 .social1 img, .social2 img, .social3 img {
-    max-width: 2em;
+    max-width: 30px;
 }
 
 .socials {
-    grid-column: 3;
+    grid-column: 1/2;
+    justify-self: start;
+    margin-left: 1em;
+}
+#burgerbutton {
+    grid-column: 3/4;
     justify-self: end;
+    margin-right: 1em;
+    margin-top: 1em;
 }
 
 .weather {
@@ -194,6 +238,12 @@ h4 {
 
 .smoothie {
     max-width: 200px;
+    border-radius: 2em;
+}
+
+.photoA {
+    display: grid;
+    grid-template-columns: 1/1;
 }
 
 main {
@@ -210,6 +260,7 @@ main {
     text-align: center;
     border: solid 1px;
     margin: 0.5em;
+    border-radius: 2em;
 }
 
 .hero a {
@@ -242,6 +293,7 @@ img {
 
 .hero-img {
     width: 100%;
+    border-radius: 2em;
 }
 
 .image-container {

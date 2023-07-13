@@ -40,9 +40,9 @@ h1 {
 }
 
 .logo {
-    max-width: 10em;
-    max-height: 10em;
-    margin-top: 1em;
+    max-width: 300px;
+    max-height: 300px;
+    /* margin-top: 1em; */
 }
 
 .site-logo {
@@ -70,7 +70,7 @@ nav {
 
 main {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
     grid-template-rows: auto auto auto;
 }
 
@@ -95,12 +95,20 @@ main {
     grid-row: 1/3;
 }
 
+.freshie { 
+    grid-column: 1/3;
+}
+
+.aboutus {
+    grid-column: 1/3;
+} 
+
 .newrelease{
     grid-column:2/4;
     grid-row: 3/4;        
 }
 
-.light, .discover-img {
+/* .light, .discover-img {
     grid-column:4/5;
     grid-row: 1/4;
     display: block;
@@ -120,7 +128,7 @@ main {
 
 .light3 {
     display: block;    
-}
+} */
 
 .date {
     display: inline;

@@ -1,3 +1,19 @@
+function incrementdrinks() {
+  // Get the current counter from local storage
+  var drinks = localStorage.getItem('numberOfDrinksOrdered');
+
+  // If the counter doesn't exist or this is the first submission, initialize it as 0
+  if (drinks === null) {
+    drinks = 0;
+  }
+
+  // Convert the counter to a number and increment it
+  drinks = parseInt(drinks, 10) + 1;
+
+  // Save the incremented counter back to local storage
+  localStorage.setItem('numberOfDrinksOrdered', drinks);
+}
+
 fetch('./scripts/fruit.json')
   .then(response => response.json())
   .then(data => {
@@ -23,8 +39,10 @@ fetch('./scripts/fruit.json')
 let form = document.querySelector('form');
 
 form.addEventListener('submit', function(e) {
+  
     // prevent the regular form submission
     e.preventDefault();
+    incrementdrinks();
 
     // get form data
     let data = new FormData(form);

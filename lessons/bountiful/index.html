@@ -11,8 +11,8 @@
     <link href="styles/medium.css" rel="stylesheet">
     <link href="styles/large.css" rel="stylesheet">
 </head>
-<body>
-        <header>
+<body class="straw">
+        <header >
             <div class="logo-h1">
                 <div class="site-logo">
                     <img class="logo" src="images/bountlogo.png" alt="The logo for Bountiful Foods.">
@@ -24,8 +24,9 @@
             <a class="social2" href="https://www.instagram.com/"><img src="images/instagram.svg" alt="The Instagram logo"> </a>
             <a class="social3" href="https://www.twitter.com/"><img src="images/twitter.svg" alt="The Twitter logo"> </a>
 
-            <button id="burgerbutton"><span>&#9776;</span><span>X</span></button>
+            
             </div>
+            <button id="burgerbutton"><span>&#9776;</span><span>X</span></button>
             <nav>
                 <ul id="primarynav">
                     <li class="active"><a href="index.html">Home</a></li>
@@ -33,6 +34,7 @@
                     <li><a href="aboutus.html">About Us</a></li>
                 </ul>
             </nav>
+            <!-- <img class="straw" src="images/strawberries.webp" alt="A picture of strawberries"> -->
         
         </header>
     <main>
@@ -52,6 +54,8 @@
 
         <div class="weather"> <h3>Current Weather In Carlsbad</h3><br><span id="current-temp"></span> <br><img id="weather-icon" class="cloud" alt= "A weather symbol"> <p id="weather-description">Loading...</p> <br> <p>Humidity: <span id="humidity">Loading...</span></p> <br> <p>3 Day Forecast: <span id="forecast"></span></p></div>
         <div class="newrelease"><h3>Information about the area</h3><p>Southern California's weather is famous for producing the best fruit in the country.</p></div>
+
+        <div class="history"> <h3>Total number of speacilty drinks ordered: <span id="display-number-of-drinks"> </span></h3></div>
         
     </main>
     
@@ -71,7 +75,7 @@
                 <br>
                 (760) 230-1590
                 <br>
-                <a href="https://goo.gl/maps/LpBWq9q8gbMCvZ89A"> &#128205; Location Map</a>
+                <a href="https://goo.gl/maps/gqVtpjGEVd11jg3z9"> &#128205; Location Map</a>
             </p>
             <br>
         <div class="copy">
@@ -84,6 +88,7 @@
     <script src="../../scripts/currentdate.js"></script>
     <script src="scripts/banner.js"></script>
     <script src="scripts/weatherAPI.js"></script>
+    <script src="scripts/drinks.js"></script>
 </body>
     
 </html>
